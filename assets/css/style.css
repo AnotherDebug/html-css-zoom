@@ -3,3 +3,110 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+.d-flex {
+    display: flex;
+}
+
+
+
+
+/* *HEADER */
+/* Menu */
+.menu {
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    background-color: red;
+}
+
+.menu .box-menu {
+    justify-content: flex-end;
+    align-items: center;
+    height: 50px;
+    background-color: blue;
+}
+
+.menu .box-menu ul {
+    list-style: none;
+}
+
+.menu .box-menu ul li {
+    display: inline-block;
+}
+
+.menu .box-menu ul li a {
+    text-decoration: none;
+}
+
+.box-cards {
+    width: 100%;
+    height: calc(100vh - 180px);
+    overflow-y: scroll;
+}
+
+.player {
+    width: 100%;
+    height: 100px;
+    background-color: green;
+}
+
+/* /Menu */
+
+
+
+/* *MAIN */
+/* Card */
+.box-cards {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    display: inline-block;
+    width: 255px;
+    height: 150px;
+    background-color: brown;
+    border: 1px solid #000;
+}
+
+/* /Card */
+
+
+
+/* /FOOTER */
+/* Player */
+.player {
+    align-items: center;
+    justify-content: space-between
+}
+
+.box-left {
+    align-items: center;
+    width: 20%;
+    height: 80px;
+    background-color: orange;
+    border: 1px solid #000;
+}
+
+.box-center {
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 80px;
+    background-color: orange;
+    border: 1px solid #000;
+}
+
+.box-right {
+    justify-content: flex-end;
+    align-items: center;
+    width: 10%;
+    height: 80px;
+    background-color: orange;
+    border: 1px solid #000;
+}
+/* /Player */
