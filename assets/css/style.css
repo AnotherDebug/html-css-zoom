@@ -110,38 +110,47 @@ body {
     flex-shrink: 0;
 }
 
-/* Icone */
-.box-left .microphone {
+/* Icons */
+.icon {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    height: 100%;
+}
+
+/* Active Icons */
+.icon:hover i {
+    color: #4cc800;
+}
+
+.icon:hover {
+    background-color: #4a4a4a;
+    border-radius: 10px;
+}
+
+.fa-solid.fa-chevron-up:hover{
+    background-color: #4a4a4a;
+    padding: 20px 10px 20px 10px;
+    border-radius: 10px;
+    color: #4cc800;
+}
+
+/* /Active Icons */
+
+.fa-solid.fa-chevron-up{
+    font-size: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
     cursor: pointer;
 }
-
-.box-left .microphone i {
-    padding-left: 5px;
-}
-
-.box-left .video {
-    cursor: pointer;
-}
-
-.box-left .video i {
-    padding-left: 20px;
-}
-
-.box-left .fa-solid.fa-chevron-up {
-    font-size: 5px;
-}
+/* /Icons */
 
 /* Testo Icone */
-.box-left p{
+.icon p{
     font-size: 8px;
-}
-
-.box-left .microphone p{
-    padding-left: 3px;
-}
-
-.box-left .video p{
-    padding-left: 10px;
+    padding-top: 5px;
 }
 /* /BOX LEFT */
 
@@ -215,7 +224,7 @@ body {
 
 /* /BOX RIGHT */
 .box-right {
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     padding:25px;
     color: #d91415;
